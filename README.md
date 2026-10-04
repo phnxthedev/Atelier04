@@ -1,20 +1,38 @@
-# Electra — Electrical Services Concept
+# Atelier04 — Electrical Services Website
 
-An original portfolio concept by **PhnXDev**, designed around electrical engineering rather than a generic business landing page.
+A fictional electrical services website created by **PhnXDev** as a portfolio project.
 
-## Direction
-The interface uses a technical control-room / electrical schematic language:
-- circuit diagram hero
-- breaker and relay visual
-- live signal panel
-- terminal labels
-- technical typography
-- dark control-system aesthetic
-- lime electrical status color
+## About
 
-The company, contact details and content are fictional placeholders.
+Atelier04 is a complete website concept for an independent electrical business.
 
-## Stack
+The design focuses on a bold, technical and modern visual identity, with animated elements and an interactive presentation of electrical services.
+
+## Features
+
+- Responsive design
+- Animated electrical signal
+- Interactive service presentation
+- Animated sections on scroll
+- Technical visual elements
+- Mobile-friendly layout
+- Pure HTML, CSS and JavaScript
+
+## Services
+
+- Electrical installations
+- Electrical renovation
+- Troubleshooting
+- Electrical safety
+- Lighting systems
+- Electrical panels
+
+## Tech
+
 HTML5 · CSS3 · Vanilla JavaScript
 
-Open `index.html` to preview locally.
+## Credits
+
+Designed and developed by **PhnXDev**.
+
+Atelierr04 is a fictional company created for demonstration and portfolio purposes.
