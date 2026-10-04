@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ATELIER 04 — Électricité</title>
+<meta name="description" content="Électricité générale, rénovation et dépannage — Atelier 04.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#161616;--paper:#e9e6dd;--orange:#ef5b25;--muted:#77736a;--line:#b9b5ab}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Manrope,Arial,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.08;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.25'/%3E%3C/svg%3E")}
+a{color:inherit;text-decoration:none}.wrap{max-width:1380px;margin:auto;padding:0 42px}
+header{height:82px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:700;letter-spacing:-.05em;font-size:20px}.logo span{color:var(--orange)}
+nav{display:flex;gap:28px;font-family:"DM Mono",monospace;font-size:12px;text-transform:uppercase}nav a{position:relative}nav a:after{content:"";position:absolute;height:1px;background:var(--orange);left:0;right:100%;bottom:-7px;transition:.3s}nav a:hover:after{right:0}
+.hero{min-height:calc(100vh - 82px);display:grid;grid-template-columns:1.25fr .75fr;align-items:end;padding:70px 0 45px;border-bottom:1px solid var(--line)}
+.kicker{font:12px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.08em;margin-bottom:22px}.dot{display:inline-block;width:8px;height:8px;background:var(--orange);border-radius:50%;margin-right:8px;animation:pulse 1.8s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 8px #ef5b2520}}
+h1{font-size:clamp(72px,11vw,170px);line-height:.82;letter-spacing:-.09em;margin:0;max-width:1000px;font-weight:600}.hero h1 em{font-family:Georgia,serif;font-weight:400;letter-spacing:-.08em}.hero-copy{padding:0 0 8px 30px;max-width:440px}.hero-copy p{font-size:17px;line-height:1.6;margin:0 0 28px}
+.cta{display:inline-flex;align-items:center;gap:15px;font-family:"DM Mono";font-size:12px;text-transform:uppercase;border-bottom:1px solid var(--ink);padding-bottom:9px}.cta b{background:var(--orange);width:30px;height:30px;border-radius:50%;display:grid;place-items:center;color:white;transition:.3s}.cta:hover b{transform:rotate(45deg)}
+.marquee{overflow:hidden;border-bottom:1px solid var(--line);white-space:nowrap;font:12px "DM Mono";text-transform:uppercase;padding:13px 0}.track{display:inline-flex;animation:move 22s linear infinite}.track span{margin-right:65px}@keyframes move{to{transform:translateX(-50%)}}
+.section{padding:125px 0;border-bottom:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:flex-start;margin-bottom:65px}.section-head h2{font-size:58px;letter-spacing:-.06em;margin:0;line-height:.95}.section-head p{font:12px "DM Mono";max-width:260px;line-height:1.7;text-transform:uppercase}
+.services{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--ink)}.service{min-height:270px;border-bottom:1px solid var(--ink);padding:28px 25px 32px;position:relative;transition:.35s;overflow:hidden}.service:nth-child(odd){border-right:1px solid var(--ink)}.service:hover{background:var(--ink);color:var(--paper)}.num{font:12px "DM Mono";color:var(--orange)}.service h3{font-size:35px;letter-spacing:-.05em;margin:70px 0 15px}.service p{max-width:470px;color:var(--muted);line-height:1.6}.service:hover p{color:#bdb9b0}.service .arrow{position:absolute;right:24px;top:22px;font-size:32px;transition:.4s}.service:hover .arrow{transform:translate(8px,-8px)}
+.process{display:grid;grid-template-columns:1fr 2fr;gap:80px}.steps{border-top:1px solid var(--ink)}.step{display:grid;grid-template-columns:70px 1fr;gap:20px;padding:28px 0;border-bottom:1px solid var(--line);transition:.3s}.step:hover{padding-left:15px}.step strong{font:12px "DM Mono";color:var(--orange)}.step h3{margin:0 0 8px;font-size:25px}.step p{margin:0;color:var(--muted);line-height:1.55}
+.meter{margin-top:30px;height:420px;border:1px solid var(--ink);position:relative;overflow:hidden;background:#ddd9ce}.meter:before,.meter:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 49px,#16161620 50px),repeating-linear-gradient(0deg,transparent 0 49px,#16161620 50px)}.meter .needle{position:absolute;left:50%;bottom:25px;width:2px;height:170px;background:var(--orange);transform-origin:bottom;transform:rotate(35deg);animation:needle 3s ease-in-out infinite alternate}.meter .hub{position:absolute;left:calc(50% - 10px);bottom:15px;width:20px;height:20px;background:var(--ink);border-radius:50%;z-index:2}@keyframes needle{to{transform:rotate(-32deg)}}.meter-label{position:absolute;top:22px;left:22px;font:12px "DM Mono";z-index:3}.meter-value{position:absolute;right:22px;bottom:22px;font-size:44px;letter-spacing:-.06em;z-index:3}
+.contact{padding:120px 0 80px;background:var(--orange);margin-top:0}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:100px}.contact h2{font-size:clamp(65px,9vw,130px);line-height:.82;letter-spacing:-.09em;margin:0}.contact-info{padding-top:12px}.contact-info p{font-size:18px;line-height:1.55;max-width:430px}.contact-info a{display:block;border-bottom:1px solid #16161680;padding:20px 0;font:13px "DM Mono";text-transform:uppercase}.contact-info a:hover{background:#161616;color:var(--paper);padding-left:12px}
+footer{padding:24px 0;display:flex;justify-content:space-between;font:11px "DM Mono";text-transform:uppercase}
+.reveal{opacity:0;transform:translateY(35px);transition:opacity .8s,transform .8s}.reveal.on{opacity:1;transform:none}
+@media(max-width:850px){.wrap{padding:0 20px}nav{gap:12px}.hero{grid-template-columns:1fr;padding-top:55px}.hero-copy{padding:45px 0 0}.section{padding:80px 0}.section-head,.process,.contact-grid{grid-template-columns:1fr;display:grid;gap:35px}.services{grid-template-columns:1fr}.service:nth-child(odd){border-right:0}.contact{padding:80px 0 50px}footer{gap:15px;flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a class="logo" href="#">ATELIER <span>04</span></a><nav><a href="#savoir">Savoir-faire</a><a href="#methode">Méthode</a><a href="#contact">Contact</a></nav></header>
+<main>
+<section class="hero">
+<div><div class="kicker"><i class="dot"></i>Électricité — </div><h1>LE COURANT,<br><em>BIEN PENSÉ.</em></h1></div>
+<div class="hero-copy"><p>Installation, rénovation et dépannage électrique pour les lieux qui doivent simplement fonctionner. Travail propre, diagnostic précis, finitions nettes.</p><a class="cta" href="#contact">Parler d'un projet <b>↗</b></a></div>
+</section>
+</main>
+</div>
+<div class="marquee"><div class="track"><span>INSTALLATION</span><span>RÉNOVATION</span><span>DÉPANNAGE</span><span>MISE EN CONFORMITÉ</span><span>INSTALLATION</span><span>RÉNOVATION</span><span>DÉPANNAGE</span><span>MISE EN CONFORMITÉ</span></div></div>
+<div class="wrap">
+<section id="savoir" class="section reveal"><div class="section-head"><h2>Ce qu'on<br>fait sur place.</h2><p>Pas de catalogue interminable. Quatre interventions, une même exigence : comprendre avant de brancher.</p></div>
+<div class="services">
+<article class="service"><span class="num">01 / INSTALLER</span><span class="arrow">↗</span><h3>Neuf & rénovation</h3><p>Tableaux, circuits, prises, éclairage et équipements. Une installation pensée pour être fiable aujourd'hui et lisible demain.</p></article>
+<article class="service"><span class="num">02 / RÉPARER</span><span class="arrow">↗</span><h3>Dépannage</h3><p>Une panne ? On remonte à la cause au lieu de changer des pièces au hasard. Diagnostic et remise en service.</p></article>
+<article class="service"><span class="num">03 / SÉCURISER</span><span class="arrow">↗</span><h3>Mise en conformité</h3><p>Contrôle de l'existant, repérage des anomalies et travaux ciblés pour remettre l'installation au propre.</p></article>
+<article class="service"><span class="num">04 / ÉCLAIRER</span><span class="arrow">↗</span><h3>Lumière & commandes</h3><p>Éclairage intérieur, extérieur et commandes. Le bon niveau de lumière, au bon endroit, sans complexité inutile.</p></article>
+</div></section>
+
+<section id="methode" class="section reveal"><div class="process"><div><div class="section-head" style="display:block;margin:0"><h2>Une méthode<br>de terrain.</h2><p style="margin-top:28px">Simple. Mesurable. Sans mauvaise surprise.</p></div><div class="meter"><div class="meter-label">LECTURE DU RÉSEAU / 230 V</div><div class="needle"></div><div class="hub"></div><div class="meter-value">230V</div></div></div>
+<div class="steps">
+<div class="step"><strong>01</strong><div><h3>On regarde.</h3><p>Visite, mesures et compréhension de l'installation avant toute proposition.</p></div></div>
+<div class="step"><strong>02</strong><div><h3>On explique.</h3><p>Un devis lisible, des choix justifiés et aucune ligne mystérieuse.</p></div></div>
+<div class="step"><strong>03</strong><div><h3>On intervient.</h3><p>Chantier propre, repérage soigné et priorité à la sécurité.</p></div></div>
+<div class="step"><strong>04</strong><div><h3>On laisse propre.</h3><p>Tests, vérifications et installation compréhensible pour la suite.</p></div></div>
+</div></div></section>
+</div>
+
+<section id="contact" class="contact reveal"><div class="wrap"><div class="contact-grid"><h2>UN PROJET<br>EN TÊTE ?</h2><div class="contact-info"><p>Décris simplement ce qu'il faut faire. Une photo ou quelques lignes suffisent pour commencer.</p><a href="mailto:bonjour@atelier04.fr">email@anonyme.fr ↗</a><a href="tel:+33300000000">numero anonyme↗</a><a href="#">Demander un passage ↗</a></div></div></div></section>
+<div class="wrap"><footer><span>ATELIER 04 — ENTREPRISE </span><span>ÉLECTRICITÉ / </span><span>© 2026</span></footer></div>
+<script>
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(x=>obs.observe(x));
+</script>
+</body></html>
