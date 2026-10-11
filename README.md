@@ -35,4 +35,4 @@ HTML5 · CSS3 · Vanilla JavaScript
 
 Designed and developed by **PhnXDev**.
 
-Atelierr04 is a fictional company created for demonstration and portfolio purposes.
+Atelier04 is a fictional company created for demonstration and portfolio purposes.
